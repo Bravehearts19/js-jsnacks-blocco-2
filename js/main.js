@@ -21,9 +21,13 @@ const array2 = [5]; */
 const array1 = ['ciao'];
 const array2 = ['hola', 'hello'];
 
+/* Il ciclo agisce solo se gli array hanno lunghezze differenti */
+/* Si poteva fare anche con il while */
 for (; array1.length !== array2.length;) {
+    /* Elemento aggiuntivo che è un numero random */
     const randomNumber = Math.random * 100;
     
+    /* Distinzione dell'if per capire se è più lungo array1 o array2, per poi aggiungere all'altro l'elemento */
     if (array1.length > array2.length) {
         array2.push(randomNumber)
     } else {
@@ -31,4 +35,5 @@ for (; array1.length !== array2.length;) {
     }   
 }
 
+/* Stampa in console della lunghezza degli array per la verifica */
 console.log(array1.length, array2.length);
